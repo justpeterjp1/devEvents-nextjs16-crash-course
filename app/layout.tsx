@@ -1,9 +1,21 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+<<<<<<< Updated upstream
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+=======
+import Navbar from "@/components/Navbar";
+import LightRays from "@/components/LightRays";
+import PostHogProvider from './PostHogProvider'
+import connectToDatabase from '@/lib/mongodb';
+
+const connection = await connectToDatabase();
+
+const SchibstedGrotesk = Schibsted_Grotesk({
+  variable: "--font-schibsted_grotesk",
+>>>>>>> Stashed changes
   subsets: ["latin"],
 });
 
